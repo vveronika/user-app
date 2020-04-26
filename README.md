@@ -2,7 +2,7 @@
 
 Simple application just to fetch and display some users and their details in modal. 
 
-Created to practice Typescript and write some test (comming soon). 
+Created to practice Typescript and write some tests (coming soon). 
 
 New functionalities like displaying some posts, adding them and removing will also be added soon. 
 
