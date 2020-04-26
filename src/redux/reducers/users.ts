@@ -8,11 +8,17 @@ import {
 const initialState: UsersStateType = {
   users: [],
   loading: true,
-  error: false,
+  fetchError: false,
 };
 
 const reducer = (state = initialState, action: UsersActions) => {
   switch (action.type) {
+    case FETCH_USERS:
+      return {
+        ...state,
+        loading: true,
+        fetchError: false,
+      };
     case FETCH_USERS_SUCCESS:
       const payload = action.payload;
       return {
@@ -21,15 +27,10 @@ const reducer = (state = initialState, action: UsersActions) => {
         loading: false,
         fetchError: false,
       };
-    case FETCH_USERS:
-      return {
-        ...state,
-        loading: true,
-        fetchError: false,
-      };
     case FETCH_USERS_FAILED:
       return {
         ...state,
+        loading: false,
         fetchError: true,
       };
     default:

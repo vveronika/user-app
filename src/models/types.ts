@@ -4,22 +4,24 @@ import { User } from './user';
 export interface UsersStateType {
   users: User[];
   loading: boolean;
-  error: boolean;
+  fetchError: boolean;
 }
 // users actions types
 interface FetchUsersAction {
   type: 'FETCH_USERS';
-  fetchError: boolean;
+  loading: boolean;
 }
 
 interface FetchUsersSuccessAction {
   type: 'FETCH_USERS_SUCCESS';
   payload: User[];
+  loading: boolean;
 }
 
 interface FetchUsersFailedAction {
   type: 'FETCH_USERS_FAILED';
-  payload: User[];
+  loading: boolean;
+  fetchError: boolean;
 }
 
 export type UsersActions =

@@ -44,6 +44,16 @@ const Home: React.FC<Props> = (props) => {
         <Loader color={theme.greenPrimary} size={100} />
       </LoaderWrapper>
     );
+  } else if (fetchError) {
+    return (
+      <PageHeaderWrapper>
+        <PageTitle size="large" title="Oops!" />
+        <PageSubtitle
+          size="large"
+          title="Something went wrong, please try again later."
+        />
+      </PageHeaderWrapper>
+    )
   }
   return (
     <>
