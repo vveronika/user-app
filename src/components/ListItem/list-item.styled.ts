@@ -7,10 +7,12 @@ export const ListItemWrapper = styled.div`
   border-radius: 10px;
   margin-bottom: 15px;
   align-items: center;
+  width: 80%;
 
   @media (min-width: 768px) {
     flex-direction: row;
     align-items: center;
+    width: 550px;
   }
 `;
 
