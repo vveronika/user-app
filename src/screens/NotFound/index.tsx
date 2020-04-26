@@ -9,7 +9,7 @@ const NotFound = () => {
   let history = useHistory();
 
   const goToHomepage = () => {
-    history.push('/');
+    history.push('/user-app');
   };
 
   return (

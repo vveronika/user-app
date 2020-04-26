@@ -20,7 +20,7 @@ function App() {
       <Router history={history}>
         <ThemeProvider theme={theme}>
           <Switch>
-            <Route exact path="/" component={Home} />
+            <Route exact path="/user-app" component={Home} />
             <Route component={NotFound} />
           </Switch>
         </ThemeProvider>
