@@ -5,11 +5,10 @@ import { User } from 'models/user';
 
 interface Props {
   items: User[];
-  onDelete: (id: string) => void;
 }
 
 const ListWrapper: React.FC<Props> = (props) => {
-  const { items, onDelete } = props;
+  const { items } = props;
   return (
     <ListContainer>
       {items.map((item) => (
@@ -21,7 +20,6 @@ const ListWrapper: React.FC<Props> = (props) => {
           email={item.email}
           phone={item.phone}
           address={item.address}
-          onDelete={onDelete}
         />
       ))}
     </ListContainer>

@@ -14,6 +14,7 @@ describe('Check if button with every appereance variant renders', () => {
         onClick={() => {}}
       />,
     );
+    expect(wrapper).toMatchSnapshot();
     expect(wrapper.exists()).toBeTruthy;
   });
   test('warning button renders', () => {
@@ -24,6 +25,7 @@ describe('Check if button with every appereance variant renders', () => {
         onClick={() => {}}
       />,
     );
+    expect(wrapper).toMatchSnapshot();
     expect(wrapper.exists()).toBeTruthy;
   });
   test('primary button renders', () => {
@@ -34,12 +36,14 @@ describe('Check if button with every appereance variant renders', () => {
         onClick={() => {}}
       />,
     );
+    expect(wrapper).toMatchSnapshot();
     expect(wrapper.exists()).toBeTruthy;
   });
   test('default button renders', () => {
     const wrapper = shallow(
       <BaseButton label="Default button" onClick={() => {}} />,
     );
+    expect(wrapper).toMatchSnapshot();
     expect(wrapper.exists()).toBeTruthy;
   });
 });

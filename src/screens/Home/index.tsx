@@ -34,10 +34,6 @@ const Home: React.FC<Props> = (props) => {
       toast.error("Sorry! Couldn't fetch your users at the moment.");
   }, [fetchError]);
 
-  const showDeleteUserError = () => {
-    toast.error('Sorry! Removing users is not available at the moment.');
-  };
-
   if (loading && users.length === 0) {
     return (
       <LoaderWrapper>
@@ -61,7 +57,7 @@ const Home: React.FC<Props> = (props) => {
         <PageTitle title="Your users list" />
         <PageSubtitle title="Click on user to get some details" />
       </PageHeaderWrapper>
-      <ListWrapper items={users} onDelete={showDeleteUserError} />
+      <ListWrapper items={users} />
     </>
   );
 };

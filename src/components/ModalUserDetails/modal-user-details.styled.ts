@@ -6,3 +6,9 @@ export const ContentWrapper = styled.div`
   flex: 1;
   padding: 0 50px;
 `;
+
+
+export const SectionTitle = styled.div`
+  color: ${props => props.theme.highlight};
+  margin: 15px 0 15px;
+`;

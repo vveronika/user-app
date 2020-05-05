@@ -10,4 +10,5 @@ export const PageWrapper = styled.div`
 
 export const ButtonWrapper = styled.div`
   width: 150px;
+  padding-top: 40px;
 `;

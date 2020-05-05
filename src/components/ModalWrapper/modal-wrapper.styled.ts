@@ -24,6 +24,7 @@ export const ModalContent = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: scroll;
 
   @media (min-width: 768px) {
     position: relative;

@@ -5,6 +5,16 @@ import { UsersActions } from 'models/types';
 import { FetchedUsersArray, UsersInitialState } from 'tests/test-mocks';
 
 describe('users reducer', () => {
+  it('should return initial users state', () => {
+    const action: UsersActions = {
+      type: 'RETURN_INITIAL_STATE_ACTION',
+      payload: [],
+      loading: true,
+      fetchError: false,
+    };
+    expect(reducer(undefined, action)).toEqual(UsersInitialState);
+  });
+
   it('should handle FETCH_USERS', () => {
     const action: UsersActions = {
       type: actions.FETCH_USERS,

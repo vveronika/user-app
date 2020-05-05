@@ -2,9 +2,9 @@
 
 Simple application just to fetch and display some users and their details in modal. 
 
-Created to practice Typescript and write some tests (coming soon). 
+Created to practice Typescript, write some test and try some new libraries. 
 
-New functionalities like displaying some posts, adding them and removing will also be added soon. 
+New functionalities like adding and removing some posts, animations with react-spring, more tests, etc. are coming soon. 
 
 To run the client application (after cloning it on your computer), in the project directory:
 
@@ -24,3 +24,6 @@ Application uses this API: [https://jsonplaceholder.typicode.com/](https://jsonp
  - [Redux (thunk)](https://redux.js.org/)
  - [react-awesome-spinners](https://www.npmjs.com/package/react-awesome-spinners)
  - [react-toastify](https://fkhadra.github.io/react-toastify/)
+ - [react-spring](https://www.react-spring.io/)
+
+ 

@@ -1,4 +1,5 @@
 export const theme = {
+  
   // colors
   lightGrey: '#acacac',
   highlight: '#f0b270',
@@ -43,7 +44,7 @@ export const theme = {
   },
   backgroundHover: {
     primary: '#83a095',
-    action: '#317efd',
+    action: '#5f756d',
     warning: '#eb3b51',
     default: 'transparent',
   },
@@ -55,7 +56,7 @@ export const theme = {
   },
   borderHover: {
     primary: '#83a095',
-    action: '#317efd',
+    action: '#5f756d',
     warning: '#eb3b51',
     default: '#7e9b91',
   },

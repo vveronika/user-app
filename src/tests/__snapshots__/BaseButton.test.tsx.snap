@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check if button with every appereance variant renders action button renders 1`] = `ShallowWrapper {}`;
+
+exports[`Check if button with every appereance variant renders default button renders 1`] = `ShallowWrapper {}`;
+
+exports[`Check if button with every appereance variant renders primary button renders 1`] = `ShallowWrapper {}`;
+
+exports[`Check if button with every appereance variant renders warning button renders 1`] = `ShallowWrapper {}`;
